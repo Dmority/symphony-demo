@@ -49,7 +49,6 @@ jobs:
       - name: Setup Aikido Safe Chain
         run: |
           curl -fsSL https://github.com/AikidoSec/safe-chain/releases/latest/download/install-safe-chain.sh | sh -s -- --ci
-          safe-chain setup-ci
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
@@ -84,7 +83,6 @@ jobs:
       - name: Setup Aikido Safe Chain
         run: |
           curl -fsSL https://github.com/AikidoSec/safe-chain/releases/latest/download/install-safe-chain.sh | sh -s -- --ci
-          safe-chain setup-ci
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
@@ -119,7 +117,6 @@ jobs:
       - name: Setup Aikido Safe Chain
         run: |
           curl -fsSL https://github.com/AikidoSec/safe-chain/releases/latest/download/install-safe-chain.sh | sh -s -- --ci
-          safe-chain setup-ci
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile

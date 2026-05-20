@@ -35,6 +35,7 @@
       "@clack/core>fast-wrap-ansi": "0.2.0",
       "@clack/prompts>fast-wrap-ansi": "0.2.0",
       "@mastra/core>lru-cache": "11.4.0",
+      "browserslist>electron-to-chromium": "1.5.359",
       "chat": "4.28.1",
       "hono": "4.12.18"
     }

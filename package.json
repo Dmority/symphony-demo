@@ -43,7 +43,8 @@
       "ai": "5.0.178",
       "browserslist>electron-to-chromium": "1.5.350",
       "chat": "4.28.1",
-      "hono": "4.12.18"
+      "hono": "4.12.18",
+      "postcss": "8.5.14"
     }
   }
 }

@@ -18,6 +18,20 @@
     "@eslint/js": "^9.28.0",
     "eslint": "^9.28.0",
     "typescript": "^5.8.3",
-    "typescript-eslint": "^8.33.1"
+    "typescript-eslint": "8.58.0"
+  },
+  "pnpm": {
+    "overrides": {
+      "@typescript-eslint/eslint-plugin": "8.58.0",
+      "@typescript-eslint/parser": "8.58.0",
+      "@typescript-eslint/project-service": "8.58.0",
+      "@typescript-eslint/scope-manager": "8.58.0",
+      "@typescript-eslint/tsconfig-utils": "8.58.0",
+      "@typescript-eslint/type-utils": "8.58.0",
+      "@typescript-eslint/types": "8.58.0",
+      "@typescript-eslint/typescript-estree": "8.58.0",
+      "@typescript-eslint/utils": "8.58.0",
+      "@typescript-eslint/visitor-keys": "8.58.0"
+    }
   }
 }

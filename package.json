@@ -39,6 +39,7 @@
       "mastra>local-pkg": "1.1.2",
       "mastra>posthog-node": "5.33.7",
       "@ai-sdk/react": "2.0.180",
+      "ai": "5.0.178",
       "browserslist>electron-to-chromium": "1.5.350",
       "chat": "4.28.1",
       "hono": "4.12.18"

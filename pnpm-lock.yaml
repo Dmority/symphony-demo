@@ -15,6 +15,7 @@ overrides:
   '@typescript-eslint/typescript-estree': 8.58.0
   '@typescript-eslint/utils': 8.58.0
   '@typescript-eslint/visitor-keys': 8.58.0
+  chat: 4.28.1
   hono: 4.12.18
 
 importers:
@@ -1439,17 +1440,8 @@ packages:
   character-entities@2.0.2:
     resolution: {integrity: sha512-shx7oQ0Awen/BRIdkjkvz54PnEEI/EjwXDSIZp86/KKdbafHh1Df/RYGBhn4hbe2+uKC9FnT5UCEdyPz3ai9hQ==}
 
-  chat@4.29.0:
-    resolution: {integrity: sha512-KdPfzaie5ivYytyRICTERg5xT+LeCbYefokvNAqTHe92eqkFaoTMXXkSitikxJVWhZIb2YoXF1b9UZHyzSzKzw==}
-    engines: {node: '>=20'}
-    peerDependencies:
-      ai: ^6.0.182
-      zod: ^3.0.0 || ^4.0.0
-    peerDependenciesMeta:
-      ai:
-        optional: true
-      zod:
-        optional: true
+  chat@4.28.1:
+    resolution: {integrity: sha512-oKBeLQ746rSmHWGoXmPgDOqMVdIe9cWFQBQ1G2pw0l2vV4sAsZgfEJmc1UYqSJR4kYy4PxKgRFy31pe4RJ644Q==}
 
   cli-boxes@3.0.0:
     resolution: {integrity: sha512-/lzGpEWL/8PfI0BmBOPRwp0c/wFNX1RdUML3jK/RcSBA9T8mZDdQpqYBKtCFTOfQbwPqWEOpjqW+Fnayc0969g==}
@@ -3736,7 +3728,7 @@ snapshots:
       '@sindresorhus/slugify': 2.2.1
       '@standard-schema/spec': 1.1.0
       ajv: 8.20.0
-      chat: 4.29.0(zod@4.4.3)
+      chat: 4.28.1
       croner: 10.0.1
       dotenv: 17.4.2
       execa: 9.6.1
@@ -3762,7 +3754,6 @@ snapshots:
       - '@standard-community/standard-json'
       - '@standard-community/standard-openapi'
       - '@types/json-schema'
-      - ai
       - bufferutil
       - express
       - openapi-types
@@ -4443,7 +4434,7 @@ snapshots:
 
   character-entities@2.0.2: {}
 
-  chat@4.29.0(zod@4.4.3):
+  chat@4.28.1:
     dependencies:
       '@workflow/serde': 4.1.0-beta.2
       mdast-util-to-string: 4.0.0
@@ -4452,8 +4443,6 @@ snapshots:
       remark-stringify: 11.0.0
       remend: 1.3.0
       unified: 11.0.5
-    optionalDependencies:
-      zod: 4.4.3
     transitivePeerDependencies:
       - supports-color
 

@@ -32,6 +32,7 @@
       "@typescript-eslint/typescript-estree": "8.58.0",
       "@typescript-eslint/utils": "8.58.0",
       "@typescript-eslint/visitor-keys": "8.58.0",
+      "chat": "4.28.1",
       "hono": "4.12.18"
     }
   }

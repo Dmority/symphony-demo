@@ -20,6 +20,7 @@ overrides:
   '@mastra/core>lru-cache': 11.4.0
   '@mastra/deployer>local-pkg': 1.1.2
   mastra>local-pkg: 1.1.2
+  mastra>posthog-node: 5.33.7
   '@ai-sdk/react': 2.0.180
   browserslist>electron-to-chromium: 1.5.350
   chat: 4.28.1
@@ -832,11 +833,11 @@ packages:
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
     engines: {node: '>=14'}
 
-  '@posthog/core@1.29.5':
-    resolution: {integrity: sha512-Jm5AE95EwBRqO6J8+skDufyf5rnEcmOvjYArCKCOzD4mWdH1xGpfcRXj5TEyZII3mD04Kr7pw9aP2ZbAHQGu2A==}
+  '@posthog/core@1.28.7':
+    resolution: {integrity: sha512-JmV2wN5sE7u2JWxwNNw6CBrPu5xDzIAMWR9zKBar8Pk/8TRrvbFPlXehap8xOtDslfnilY+/urpHeVHpbXMo4w==}
 
-  '@posthog/types@1.374.2':
-    resolution: {integrity: sha512-ZghQSFMi+HFJNPvPjBoyY/jWQ+q6mSQVtWQxOHMSbBidUZjsyYbxYxBFbHy2qWLNe4mEpX+Wqir2Q4I/4AVvJQ==}
+  '@posthog/types@1.373.2':
+    resolution: {integrity: sha512-6o0AARB7OakxsrQiVeMow/m1QPnsI0Cdm7g0o5mNjVSLH/sU1MuTqckNQDLzImv++MzW0+Gyvq44cgwt3wP/Pw==}
 
   '@rolldown/pluginutils@1.0.0-beta.27':
     resolution: {integrity: sha512-+d0F4MKMCbeVUJwG96uQ4SgAznZNSq93I3V+9NHA4OpvqG8mRCpGdKmK8l/dl02h2CCDHwW2FqilnTyDcAnqjA==}
@@ -2593,8 +2594,8 @@ packages:
     resolution: {integrity: sha512-FfR8sjd4em2T6fb3I2MwAJU7HWVMr9zba+enmQeeWFfCbm+UOC/0X4DS8XtpUTMwWMGbjKYP7xjfNekzyGmB3A==}
     engines: {node: ^10 || ^12 || >=14}
 
-  posthog-node@5.34.6:
-    resolution: {integrity: sha512-oDjagFRkmCbWJBxG1FVU3kOGC6dxNpR849q8ARrZSBK3zWz4zJox6V5EjrATKM9RXKvAmbCSFoxYaOYTzp3phA==}
+  posthog-node@5.33.7:
+    resolution: {integrity: sha512-jxDLWJ6eMk93cAaZYeTHSGyHAIH2wPPm9EFOnoJb/GfJfjqIZe89NvSDqOYOqclTkImW3M/Js92yZVo1TKpYXA==}
     engines: {node: ^20.20.0 || >=22.22.0}
     peerDependencies:
       rxjs: ^7.0.0
@@ -3920,11 +3921,11 @@ snapshots:
   '@pkgjs/parseargs@0.11.0':
     optional: true
 
-  '@posthog/core@1.29.5':
+  '@posthog/core@1.28.7':
     dependencies:
-      '@posthog/types': 1.374.2
+      '@posthog/types': 1.373.2
 
-  '@posthog/types@1.374.2': {}
+  '@posthog/types@1.373.2': {}
 
   '@rolldown/pluginutils@1.0.0-beta.27': {}
 
@@ -5267,7 +5268,7 @@ snapshots:
       local-pkg: 1.1.2
       openapi-fetch: 0.17.0
       picocolors: 1.1.1
-      posthog-node: 5.34.6
+      posthog-node: 5.33.7
       semver: 7.8.0
       serve: 14.2.6
       serve-handler: 6.1.7
@@ -5804,9 +5805,9 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
-  posthog-node@5.34.6:
+  posthog-node@5.33.7:
     dependencies:
-      '@posthog/core': 1.29.5
+      '@posthog/core': 1.28.7
 
   prelude-ls@1.2.1: {}
 

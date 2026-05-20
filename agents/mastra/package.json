@@ -9,7 +9,7 @@
     "start": "mastra start",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "lint": "eslint .",
-    "test": "tsc -p tsconfig.json --noEmit"
+    "test": "tsc -p tsconfig.test.json && node --test ../../.test-dist/mastra/src/mastra/config/llm-models.test.js"
   },
   "dependencies": {
     "@mastra/ai-sdk": "^1.4.2",

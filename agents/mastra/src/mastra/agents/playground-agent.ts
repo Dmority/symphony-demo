@@ -1,10 +1,9 @@
 import { Agent } from "@mastra/core/agent";
 import { loadEnv } from "../config/env";
+import { getLlmModelDefinition } from "../config/llm-models";
 
 const env = loadEnv();
-const model = env.OPENROUTER_MODEL.startsWith("openrouter/")
-  ? env.OPENROUTER_MODEL
-  : `openrouter/${env.OPENROUTER_MODEL}`;
+const llmModel = getLlmModelDefinition(env.AGENT_LLM_MODEL);
 
 export const playgroundAgent = new Agent({
   id: "playgroundAgent",
@@ -14,5 +13,5 @@ export const playgroundAgent = new Agent({
     "Answer directly, ask clarifying questions only when needed, and never request secrets.",
     "If a user includes credentials or tokens, tell them not to share secrets and avoid repeating the value.",
   ].join(" "),
-  model,
+  model: llmModel.providerModel,
 });

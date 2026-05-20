@@ -34,7 +34,8 @@ pnpm install --frozen-lockfile
 Create a local environment file from `.env.example` and set `OPENROUTER_API_KEY`.
 The Mastra agent loads OpenRouter settings from process environment variables and from `.env` files at the repository root or `agents/mastra`.
 
-The default model is `x-ai/grok-4.3`. Override it with `OPENROUTER_MODEL` when needed.
+The agent LLM is selected with `AGENT_LLM_MODEL`. The initial supported value and default is `grok`.
+Future model additions should start in `agents/mastra/src/mastra/config/llm-models.ts`, which maps public model names to provider model IDs.
 
 ## Development
 

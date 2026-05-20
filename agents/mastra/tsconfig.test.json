@@ -1,0 +1,11 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "outDir": "../../.test-dist/mastra"
+  },
+  "include": [
+    "src/mastra/config/llm-models.ts",
+    "src/mastra/config/llm-models.test.ts"
+  ]
+}

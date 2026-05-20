@@ -1,0 +1,23 @@
+{
+  "name": "symphony-demo",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@9.15.4",
+  "scripts": {
+    "dev": "pnpm --parallel --filter frontend --filter mastra-agent dev",
+    "dev:frontend": "pnpm --filter frontend dev",
+    "dev:agent": "pnpm --filter mastra-agent dev",
+    "build": "pnpm --recursive build",
+    "typecheck": "pnpm --recursive typecheck",
+    "lint": "pnpm --recursive lint",
+    "test": "pnpm --recursive test",
+    "audit": "pnpm audit"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.28.0",
+    "eslint": "^9.28.0",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.33.1"
+  }
+}

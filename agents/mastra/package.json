@@ -1,0 +1,25 @@
+{
+  "name": "mastra-agent",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "mastra dev",
+    "build": "mastra build",
+    "start": "mastra start",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "eslint .",
+    "test": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@mastra/ai-sdk": "^1.4.2",
+    "@mastra/core": "^1.35.0",
+    "@mastra/loggers": "^1.1.1",
+    "dotenv": "^16.4.7",
+    "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.29",
+    "mastra": "^1.9.3"
+  }
+}
